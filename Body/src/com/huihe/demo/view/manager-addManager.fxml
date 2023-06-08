@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="559.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerAddManagerController">
+   <children>
+      <Label layoutX="150.0" layoutY="66.0" text="添加学生信息">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="174.0" text="账号">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="account" layoutX="191.0" layoutY="176.0" prefHeight="36.0" prefWidth="204.0" />
+      <Label layoutX="106.0" layoutY="246.0" text="密码">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="320.0" text="确认密码">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="203.0" layoutY="453.0" mnemonicParsing="false" text="添加" onAction="#addManager">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password1" layoutX="191.0" layoutY="248.0" prefHeight="36.0" prefWidth="204.0" />
+      <PasswordField fx:id="password2" layoutX="191.0" layoutY="320.0" prefHeight="36.0" prefWidth="204.0" />
+      <Label fx:id="errorinfo" alignment="CENTER" layoutX="122.0" layoutY="387.0" prefHeight="24.0" prefWidth="260.0" text="Label" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="651.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerBookController">
+   <children>
+      <Label layoutX="387.0" layoutY="48.0" text="图书馆总体书籍：">
+         <font>
+            <Font size="33.0" />
+         </font></Label>
+      <TableView fx:id="tableView" layoutX="198.0" layoutY="125.0" prefHeight="401.0" prefWidth="641.0">
+        <columns>
+          <TableColumn fx:id="isbn" prefWidth="107.0" text="ISBN" />
+          <TableColumn fx:id="name" prefWidth="122.0" text="书名" />
+            <TableColumn fx:id="author" prefWidth="78.0" text="作者名" />
+            <TableColumn fx:id="publishDate" prefWidth="127.0" text="出版日期" />
+            <TableColumn fx:id="publisher" minWidth="0.0" prefWidth="119.0" text="出版社" />
+            <TableColumn fx:id="available" prefWidth="87.0" text="剩余数量" />
+        </columns>
+      </TableView>
+      <Button layoutX="291.0" layoutY="551.0" mnemonicParsing="false" onAction="#showManagerAddBookView" prefHeight="36.0" prefWidth="96.0" text="添加">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="482.0" layoutY="551.0" mnemonicParsing="false" onAction="#showManagerAlterBookView" prefHeight="36.0" prefWidth="96.0" text="修改">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="668.0" layoutY="551.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="36.0" prefWidth="96.0" text="删除">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="857.0" layoutY="43.0" mnemonicParsing="false" text="刷新" onAction="#refresh">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

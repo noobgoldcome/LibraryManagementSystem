@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="651.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.StudentReturnController">
+   <children>
+      <Label layoutX="403.0" layoutY="52.0" text="可还的书籍：">
+         <font>
+            <Font size="33.0" />
+         </font></Label>
+      <TableView fx:id="tableView" layoutX="198.0" layoutY="125.0" prefHeight="401.0" prefWidth="641.0">
+        <columns>
+          <TableColumn fx:id="isbn" prefWidth="155.0" text="ISBN" />
+          <TableColumn fx:id="name" prefWidth="162.0" text="书名" />
+            <TableColumn fx:id="borrowDate" prefWidth="144.0" text="借书日期" />
+            <TableColumn fx:id="returnDate" prefWidth="179.0" text="还书日期" />
+        </columns>
+      </TableView>
+      <Button layoutX="470.0" layoutY="557.0" mnemonicParsing="false" onAction="#doReturn" prefHeight="36.0" prefWidth="96.0" text="还书">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

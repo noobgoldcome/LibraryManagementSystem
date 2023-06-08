@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="930.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerStudentController">
+   <children>
+      <Label layoutX="373.0" layoutY="106.0" text="学生账户：">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="266.0" layoutY="204.0" prefHeight="522.0" prefWidth="413.0">
+        <columns>
+          <TableColumn fx:id="account" prefWidth="211.0" text="账号" />
+          <TableColumn fx:id="password" prefWidth="201.0" text="密码" />
+        </columns>
+      </TableView>
+      <Button layoutX="209.0" layoutY="790.0" mnemonicParsing="false" text="增加" onAction="#showManagerAddStudentView">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Button layoutX="416.0" layoutY="790.0" mnemonicParsing="false" text="修改" onAction="#showManagerAlterStudentView">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Button layoutX="622.0" layoutY="790.0" mnemonicParsing="false" text="删除" onAction="#doDelete">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Button layoutX="767.0" layoutY="99.0" mnemonicParsing="false" text="刷新" onAction="#refresh">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.EntranceController">
+   <children>
+      <Label layoutX="102.0" layoutY="85.0" text="欢迎来到图书借阅管理系统">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="102.0" layoutY="220.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="131.0" text="学生入口" onAction="#enterStudent"/>
+      <Button layoutX="367.0" layoutY="220.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="131.0" text="管理员入口" onAction="#enterManager"/>
+   </children>
+</AnchorPane>
