@@ -1,5 +1,9 @@
 package com.huihe.demo.entity;
 
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.scene.control.CheckBox;
+
 public class Book {
     private String isbn;
     private String name;
@@ -8,7 +12,24 @@ public class Book {
     private String publisher;
     private Integer available;
 
+    //private Boolean select;
+    private BooleanProperty select;
+
+    public boolean isSelected() {
+        return select.get();
+    }
+
+    public void setSelected(boolean selected) {
+        this.select.set(selected);
+    }
+
+    public BooleanProperty selectedProperty() {
+        return select;
+    }
+
     public Book() {
+        //this.select = false;
+        this.select = new SimpleBooleanProperty(false);
     }
 
     public Book(String isbn, String name, String author, String publishDate, String publisher, Integer available) {
@@ -18,7 +39,11 @@ public class Book {
         this.publishDate = publishDate;
         this.publisher = publisher;
         this.available = available;
+        this.select = new SimpleBooleanProperty(false);
     }
+
+
+
 
     public String getIsbn() {
         return isbn;

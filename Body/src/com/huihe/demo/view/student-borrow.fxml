@@ -13,8 +13,9 @@
          <font>
             <Font size="33.0" />
          </font></Label>
-      <TableView fx:id="tableView" layoutX="198.0" layoutY="125.0" prefHeight="401.0" prefWidth="641.0">
+      <TableView fx:id="tableView" layoutX="198.0" layoutY="125.0" prefHeight="401.0" prefWidth="730.0">
         <columns>
+            <TableColumn fx:id="select" prefWidth="89.0" text="选择" />
           <TableColumn fx:id="isbn" prefWidth="107.0" text="ISBN" />
           <TableColumn fx:id="name" prefWidth="122.0" text="书名" />
             <TableColumn fx:id="author" prefWidth="78.0" text="作者名" />
