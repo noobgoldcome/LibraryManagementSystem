@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="467.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.StudentRegisterController">
+<AnchorPane prefHeight="467.0" prefWidth="305.0" style="-fx-background-color: #408ef5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.StudentRegisterController">
    <children>
       <Label layoutX="55.0" layoutY="113.0" text="账号" />
       <Label layoutX="55.0" layoutY="192.0" text="密码" />
@@ -22,6 +22,6 @@
       <PasswordField fx:id="password2" layoutX="114.0" layoutY="270.0" prefHeight="36.0" prefWidth="155.0" />
       <Label layoutX="37.0" layoutY="276.0" text="确认密码" />
       <Label fx:id="errorinfo" alignment="CENTER" layoutX="36.0" layoutY="328.0" prefHeight="24.0" prefWidth="233.0" text="Label" textFill="RED" visible="false" />
-      <Button layoutX="111.0" layoutY="384.0" mnemonicParsing="false" onAction="#addStudent" text="确定" />
+      <Button layoutX="111.0" layoutY="384.0" mnemonicParsing="false" onAction="#addStudent" style="-fx-background-color: #16ffd4;" text="确定" />
    </children>
 </AnchorPane>

@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="930.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerStudentController">
+<AnchorPane prefHeight="930.0" prefWidth="944.0" style="-fx-background-color: #a0ea6f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerStudentController">
    <children>
       <Label layoutX="373.0" layoutY="106.0" text="学生账户：">
          <font>
@@ -20,22 +20,22 @@
           <TableColumn fx:id="password" prefWidth="201.0" text="密码" />
         </columns>
       </TableView>
-      <Button layoutX="209.0" layoutY="790.0" mnemonicParsing="false" text="增加" onAction="#showManagerAddStudentView">
+      <Button layoutX="209.0" layoutY="790.0" mnemonicParsing="false" onAction="#showManagerAddStudentView" style="-fx-background-color: #f0ff08;" text="增加">
          <font>
             <Font size="34.0" />
          </font>
       </Button>
-      <Button layoutX="416.0" layoutY="790.0" mnemonicParsing="false" text="修改" onAction="#showManagerAlterStudentView">
+      <Button layoutX="416.0" layoutY="790.0" mnemonicParsing="false" onAction="#showManagerAlterStudentView" style="-fx-background-color: #f0ff08;" text="修改">
          <font>
             <Font size="34.0" />
          </font>
       </Button>
-      <Button layoutX="622.0" layoutY="790.0" mnemonicParsing="false" text="删除" onAction="#doDelete">
+      <Button layoutX="622.0" layoutY="790.0" mnemonicParsing="false" onAction="#doDelete" style="-fx-background-color: #f0ff08;" text="删除">
          <font>
             <Font size="34.0" />
          </font>
       </Button>
-      <Button layoutX="767.0" layoutY="99.0" mnemonicParsing="false" text="刷新" onAction="#refresh">
+      <Button layoutX="767.0" layoutY="99.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #f0ff08;" text="刷新">
          <font>
             <Font size="34.0" />
          </font>

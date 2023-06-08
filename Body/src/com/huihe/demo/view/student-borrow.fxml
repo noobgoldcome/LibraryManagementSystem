@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="651.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.StudentBorrowController">
+<AnchorPane prefHeight="651.0" prefWidth="1036.0" style="-fx-background-color: #408ef5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.StudentBorrowController">
    <children>
       <Label layoutX="198.0" layoutY="49.0" text="可借阅的书籍：">
          <font>
@@ -24,12 +24,12 @@
             <TableColumn fx:id="available" prefWidth="87.0" text="剩余数量" />
         </columns>
       </TableView>
-      <Button layoutX="470.0" layoutY="557.0" mnemonicParsing="false" onAction="#doBorrow" prefHeight="36.0" prefWidth="96.0" text="借阅">
+      <Button layoutX="470.0" layoutY="557.0" mnemonicParsing="false" onAction="#doBorrow" prefHeight="36.0" prefWidth="96.0" style="-fx-background-color: #16ffd4;" text="借阅">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
       <TextField fx:id="search" layoutX="573.0" layoutY="56.0" />
-      <Button layoutX="821.0" layoutY="53.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="36.0" prefWidth="60.0" text="搜索" />
+      <Button layoutX="821.0" layoutY="53.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="36.0" prefWidth="60.0" style="-fx-background-color: #16ffd4;" text="搜索" />
    </children>
 </AnchorPane>

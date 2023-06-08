@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerMainController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #a0ea6f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerMainController">
     <children>
         <Label layoutX="52.0" layoutY="33.0" text="欢迎进入图书管理界面 :">
             <font>
@@ -18,10 +18,10 @@
                 <Font size="25.0" />
             </font>
         </Label>
-        <Button layoutX="52.0" layoutY="144.0" mnemonicParsing="false" onAction="#showManageBookView" prefHeight="146.0" prefWidth="137.0" text="管理图书信息" />
-        <Button layoutX="224.0" layoutY="144.0" mnemonicParsing="false" onAction="#showManageStudentView" prefHeight="146.0" prefWidth="137.0" text="管理学生账号" />
-        <Button layoutX="394.0" layoutY="144.0" mnemonicParsing="false" onAction="#showManageManagerView" prefHeight="146.0" prefWidth="153.0" text="管理管理员账号" />
-        <Button layoutX="471.0" layoutY="29.0" mnemonicParsing="false" onAction="#back" text="退出登录">
+        <Button layoutX="52.0" layoutY="144.0" mnemonicParsing="false" onAction="#showManageBookView" prefHeight="146.0" prefWidth="137.0" style="-fx-background-color: #f0ff08;" text="管理图书信息" />
+        <Button layoutX="224.0" layoutY="144.0" mnemonicParsing="false" onAction="#showManageStudentView" prefHeight="146.0" prefWidth="137.0" style="-fx-background-color: #f0ff08;" text="管理学生账号" />
+        <Button layoutX="394.0" layoutY="144.0" mnemonicParsing="false" onAction="#showManageManagerView" prefHeight="146.0" prefWidth="153.0" style="-fx-background-color: #f0ff08;" text="管理管理员账号" />
+        <Button layoutX="471.0" layoutY="29.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #f0ff08;" text="退出登录">
             <font>
                 <Font size="21.0" />
             </font>

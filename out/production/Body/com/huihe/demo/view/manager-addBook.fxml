@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="551.0" prefWidth="376.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerAddBookController">
+<AnchorPane prefHeight="551.0" prefWidth="376.0" style="-fx-background-color: #a0ea6f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerAddBookController">
    <children>
       <Label layoutX="32.0" layoutY="112.0" text="isbn" />
       <TextField fx:id="isbn" layoutX="116.0" layoutY="106.0" prefHeight="36.0" prefWidth="183.0" />
@@ -17,7 +17,7 @@
       <TextField fx:id="publisher" layoutX="116.0" layoutY="326.0" prefHeight="36.0" prefWidth="183.0" />
       <Label layoutX="32.0" layoutY="332.0" text="出版社" />
       <DatePicker fx:id="publishDate" layoutX="116.0" layoutY="272.0" prefHeight="36.0" prefWidth="183.0" />
-      <Button layoutX="116.0" layoutY="484.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" text="添加" onAction="#addBookToDB"/>
+      <Button layoutX="116.0" layoutY="484.0" mnemonicParsing="false" onAction="#addBookToDB" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #f0ff08;" text="添加" />
       <Label layoutX="32.0" layoutY="224.0" text="作者" />
       <TextField fx:id="author" layoutX="116.0" layoutY="218.0" prefHeight="36.0" prefWidth="183.0" />
       <Label layoutX="32.0" layoutY="386.0" text="剩余数量" />

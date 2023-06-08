@@ -7,21 +7,21 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.StudentMainController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #408ef5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.StudentMainController">
    <children>
-      <Label layoutX="52.0" layoutY="33.0" text="欢迎进入图书借阅界面 :">
+      <Label layoutX="52.0" layoutY="33.0" text="欢迎进入图书借阅界面 :" textAlignment="RIGHT" textFill="#383c4a">
          <font>
-            <Font size="25.0" />
+            <Font name="SimSun" size="32.0" />
          </font></Label>
       <Label fx:id="name" layoutX="52.0" layoutY="89.0" prefHeight="33.0" prefWidth="213.0" text="Label">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Button layoutX="52.0" layoutY="144.0" mnemonicParsing="false" onAction="#showBorrowView" prefHeight="146.0" prefWidth="137.0" text="借书" />
-      <Button layoutX="224.0" layoutY="144.0" mnemonicParsing="false" onAction="#showReturnView" prefHeight="146.0" prefWidth="137.0" text="还书" />
-      <Button layoutX="394.0" layoutY="144.0" mnemonicParsing="false" onAction="#showAlterPasswordView" prefHeight="146.0" prefWidth="137.0" text="修改密码" />
-      <Button layoutX="419.0" layoutY="30.0" mnemonicParsing="false" onAction="#back" text="退出登录">
+      <Button layoutX="52.0" layoutY="144.0" mnemonicParsing="false" onAction="#showBorrowView" prefHeight="146.0" prefWidth="137.0" style="-fx-background-color: #16ffd4;" text="借书" />
+      <Button layoutX="224.0" layoutY="144.0" mnemonicParsing="false" onAction="#showReturnView" prefHeight="146.0" prefWidth="137.0" style="-fx-background-color: #16ffd4;" text="还书" />
+      <Button layoutX="394.0" layoutY="144.0" mnemonicParsing="false" onAction="#showAlterPasswordView" prefHeight="146.0" prefWidth="137.0" style="-fx-background-color: #16ffd4;" text="修改密码" />
+      <Button layoutX="419.0" layoutY="30.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #16ffd4;" text="退出登录">
          <font>
             <Font size="21.0" />
          </font>

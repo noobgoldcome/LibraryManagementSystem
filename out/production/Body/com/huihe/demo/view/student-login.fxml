@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.StudentLogInController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #408ef5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.StudentLogInController">
    <children>
       <Label layoutX="214.0" layoutY="40.0" text="学生入口">
          <font>
@@ -26,17 +26,17 @@
       </Label>
       <TextField fx:id="account" layoutX="207.0" layoutY="125.0" />
       <PasswordField fx:id="password" layoutX="207.0" layoutY="199.0" />
-      <Button layoutX="208.0" layoutY="320.0" mnemonicParsing="false" onAction="#doLogin" prefHeight="45.0" prefWidth="184.0" text="登录">
+      <Button layoutX="208.0" layoutY="320.0" mnemonicParsing="false" onAction="#doLogin" prefHeight="45.0" prefWidth="184.0" style="-fx-background-color: #16ffd4;" text="登录">
          <font>
             <Font size="22.0" />
          </font>
       </Button>
       <Label fx:id="errorinfo" layoutX="254.0" layoutY="259.0" text="Label" textFill="RED" visible="false" />
-      <Button layoutX="459.0" layoutY="25.0" mnemonicParsing="false" onAction="#back" text="返回">
+      <Button layoutX="459.0" layoutY="25.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #16ffd4;" text="返回">
          <font>
             <Font size="28.0" />
          </font>
       </Button>
-      <Button layoutX="207.0" layoutY="253.0" mnemonicParsing="false" text="注册" onAction="#showRegisterView"/>
+      <Button layoutX="207.0" layoutY="253.0" mnemonicParsing="false" onAction="#showRegisterView" style="-fx-background-color: #16ffd4;" text="注册" />
    </children>
 </AnchorPane>

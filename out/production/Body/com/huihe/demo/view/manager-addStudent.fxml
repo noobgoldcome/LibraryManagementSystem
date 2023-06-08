@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="559.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerAddStudentController">
+<AnchorPane prefHeight="559.0" prefWidth="503.0" style="-fx-background-color: #a0ea6f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerAddStudentController">
    <children>
       <Label layoutX="150.0" layoutY="66.0" text="添加学生信息">
          <font>
@@ -30,7 +30,7 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <Button layoutX="203.0" layoutY="453.0" mnemonicParsing="false" onAction="#addStudent" text="添加">
+      <Button layoutX="203.0" layoutY="453.0" mnemonicParsing="false" onAction="#addStudent" style="-fx-background-color: #f0ff08;" text="添加">
          <font>
             <Font size="29.0" />
          </font>

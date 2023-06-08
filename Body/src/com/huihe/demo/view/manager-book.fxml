@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="651.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerBookController">
+<AnchorPane prefHeight="651.0" prefWidth="1036.0" style="-fx-background-color: #a0ea6f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerBookController">
    <children>
       <Label layoutX="198.0" layoutY="48.0" text="图书馆总体书籍：">
          <font>
@@ -23,28 +23,28 @@
             <TableColumn fx:id="available" prefWidth="87.0" text="剩余数量" />
         </columns>
       </TableView>
-      <Button layoutX="291.0" layoutY="551.0" mnemonicParsing="false" onAction="#showManagerAddBookView" prefHeight="36.0" prefWidth="96.0" text="添加">
+      <Button layoutX="291.0" layoutY="551.0" mnemonicParsing="false" onAction="#showManagerAddBookView" prefHeight="36.0" prefWidth="96.0" style="-fx-background-color: #f0ff08;" text="添加">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="482.0" layoutY="551.0" mnemonicParsing="false" onAction="#showManagerAlterBookView" prefHeight="36.0" prefWidth="96.0" text="修改">
+      <Button layoutX="482.0" layoutY="551.0" mnemonicParsing="false" onAction="#showManagerAlterBookView" prefHeight="36.0" prefWidth="96.0" style="-fx-background-color: #f0ff08;" text="修改">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="668.0" layoutY="551.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="36.0" prefWidth="96.0" text="删除">
+      <Button layoutX="668.0" layoutY="551.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="36.0" prefWidth="96.0" style="-fx-background-color: #f0ff08;" text="删除">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="888.0" layoutY="125.0" mnemonicParsing="false" onAction="#refresh" text="刷新">
+      <Button layoutX="888.0" layoutY="125.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #f0ff08;" text="刷新">
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <TextField fx:id="search" layoutX="597.0" layoutY="48.0" />
-      <Button layoutX="839.0" layoutY="45.0" mnemonicParsing="false" text="搜索" onAction="#doSearch">
+      <Button layoutX="839.0" layoutY="45.0" mnemonicParsing="false" onAction="#doSearch" style="-fx-background-color: #f0ff08;" text="搜索">
          <font>
             <Font size="21.0" />
          </font>
