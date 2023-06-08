@@ -13,7 +13,7 @@
          <font>
             <Font size="25.0" />
          </font></Label>
-      <Label fx:id="name" layoutX="345.0" layoutY="34.0" text="Label">
+      <Label fx:id="name" layoutX="52.0" layoutY="89.0" prefHeight="33.0" prefWidth="213.0" text="Label">
          <font>
             <Font size="25.0" />
          </font>
@@ -21,7 +21,7 @@
       <Button layoutX="52.0" layoutY="144.0" mnemonicParsing="false" onAction="#showBorrowView" prefHeight="146.0" prefWidth="137.0" text="借书" />
       <Button layoutX="224.0" layoutY="144.0" mnemonicParsing="false" onAction="#showReturnView" prefHeight="146.0" prefWidth="137.0" text="还书" />
       <Button layoutX="394.0" layoutY="144.0" mnemonicParsing="false" onAction="#showAlterPasswordView" prefHeight="146.0" prefWidth="137.0" text="修改密码" />
-      <Button layoutX="419.0" layoutY="30.0" mnemonicParsing="false" text="退出登录" onAction="#back">
+      <Button layoutX="419.0" layoutY="30.0" mnemonicParsing="false" onAction="#back" text="退出登录">
          <font>
             <Font size="21.0" />
          </font>
