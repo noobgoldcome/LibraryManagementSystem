@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="651.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.ManagerBookController">
    <children>
-      <Label layoutX="387.0" layoutY="48.0" text="图书馆总体书籍：">
+      <Label layoutX="198.0" layoutY="48.0" text="图书馆总体书籍：">
          <font>
             <Font size="33.0" />
          </font></Label>
@@ -38,9 +38,15 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="857.0" layoutY="43.0" mnemonicParsing="false" text="刷新" onAction="#refresh">
+      <Button layoutX="888.0" layoutY="125.0" mnemonicParsing="false" onAction="#refresh" text="刷新">
          <font>
             <Font size="27.0" />
+         </font>
+      </Button>
+      <TextField fx:id="search" layoutX="597.0" layoutY="48.0" />
+      <Button layoutX="839.0" layoutY="45.0" mnemonicParsing="false" text="搜索" onAction="#doSearch">
+         <font>
+            <Font size="21.0" />
          </font>
       </Button>
    </children>

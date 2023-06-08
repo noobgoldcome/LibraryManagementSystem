@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
@@ -30,6 +31,8 @@ public class ManagerBookController {
     @FXML
     private TableColumn<Book,Integer> available;
     @FXML
+    private TextField search;
+    @FXML
     public void initialize(){
         getData();
     }
@@ -43,8 +46,17 @@ public class ManagerBookController {
         available.setCellValueFactory(new PropertyValueFactory<>("available"));
         tableView.setItems(FXCollections.observableList(book));
     }
-
-    @FXML
+    private void searchData(String searchText){
+        List<Book> book = DBUtil.readData(searchText);
+        isbn.setCellValueFactory(new PropertyValueFactory<>("isbn"));
+        name.setCellValueFactory(new PropertyValueFactory<>("name"));
+        author.setCellValueFactory(new PropertyValueFactory<>("author"));
+        publishDate.setCellValueFactory(new PropertyValueFactory<>("publishDate"));
+        publisher.setCellValueFactory(new PropertyValueFactory<>("publisher"));
+        available.setCellValueFactory(new PropertyValueFactory<>("available"));
+        tableView.setItems(FXCollections.observableList(book));
+    }
+    /*@FXML
     public void doBorrow(){
         Book book = tableView.getSelectionModel().getSelectedItem();
         if(book != null){
@@ -58,7 +70,7 @@ public class ManagerBookController {
             DBUtil.updateBorrow(book);
             getData();
         }
-    }
+    }*/
     public void showManagerAddBookView(){
         Main.addView("view/manager-addBook.fxml");
     }
@@ -78,5 +90,9 @@ public class ManagerBookController {
     }
     public void refresh(){
         getData();
+    }
+    public void doSearch(){
+        String searchText = search.getText();
+        searchData(searchText);
     }
 }

@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
@@ -31,11 +32,23 @@ public class StudentBorrowController {
     @FXML
     private TableColumn<Book,Integer> available;
     @FXML
+    private TextField search;
+    @FXML
     public void initialize(){
         getData();
     }
     private void getData(){
         List<Book> book = DBUtil.readData();
+        isbn.setCellValueFactory(new PropertyValueFactory<>("isbn"));
+        name.setCellValueFactory(new PropertyValueFactory<>("name"));
+        author.setCellValueFactory(new PropertyValueFactory<>("author"));
+        publishDate.setCellValueFactory(new PropertyValueFactory<>("publishDate"));
+        publisher.setCellValueFactory(new PropertyValueFactory<>("publisher"));
+        available.setCellValueFactory(new PropertyValueFactory<>("available"));
+        tableView.setItems(FXCollections.observableList(book));
+    }
+    private void searchData(String searchText){
+        List<Book> book = DBUtil.readData(searchText);
         isbn.setCellValueFactory(new PropertyValueFactory<>("isbn"));
         name.setCellValueFactory(new PropertyValueFactory<>("name"));
         author.setCellValueFactory(new PropertyValueFactory<>("author"));
@@ -59,6 +72,12 @@ public class StudentBorrowController {
             DBUtil.updateBorrow(book);
             getData();
         }
+    }
+
+    @FXML
+    public void doSearch(){
+        String searchText = search.getText();
+        searchData(searchText);
     }
 
 

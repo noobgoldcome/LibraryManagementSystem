@@ -181,6 +181,38 @@ public class DBUtil {
         return result;
     }
 
+    public static List<Book> readData(String searchText) {
+        List<Book> result = new ArrayList<>();
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/library", "root", "123456");) {
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM books WHERE isbn LIKE ? OR name LIKE ? OR author LIKE ? OR publishDate like ? OR publisher like ?;");
+            statement.setString(1, "%" + searchText + "%");
+            statement.setString(2, "%" + searchText + "%");
+            statement.setString(3, "%" + searchText + "%");
+            statement.setString(4, "%" + searchText + "%");
+            statement.setString(5, "%" + searchText + "%");
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                String isbn = resultSet.getString("isbn");
+                String name = resultSet.getString("name");
+                String author = resultSet.getString("author");
+                String publishDate = resultSet.getString("publishDate");
+                String publisher = resultSet.getString("publisher");
+                Integer available = resultSet.getInt("available");
+
+                Book book = new Book(isbn, name, author, publishDate, publisher, available);
+                result.add(book);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
     public static List<Log> readLog() {
         List<Log> result = new ArrayList<>();
         try {
@@ -207,6 +239,7 @@ public class DBUtil {
         }
         return result;
     }
+
     public static List<Student> readStudent() {
         List<Student> result = new ArrayList<>();
         try {

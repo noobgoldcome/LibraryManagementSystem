@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="651.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huihe.demo.controller.StudentReturnController">
    <children>
-      <Label layoutX="403.0" layoutY="52.0" text="可还的书籍：">
+      <Label layoutX="419.0" layoutY="47.0" text="可还的书籍：">
          <font>
             <Font size="33.0" />
          </font></Label>

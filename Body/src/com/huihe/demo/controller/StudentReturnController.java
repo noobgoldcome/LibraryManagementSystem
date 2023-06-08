@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import javax.rmi.CORBA.Util;
@@ -39,6 +40,7 @@ public class StudentReturnController {
         returnDate.setCellValueFactory(new PropertyValueFactory<>("returnDate"));
         tableView.setItems(FXCollections.observableList(log));
     }
+
 
     @FXML
     public void doReturn(){
